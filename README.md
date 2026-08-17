@@ -1,259 +1,130 @@
-# 📊 Amazon E-Commerce Sales Analytics Dashboard
+# 📦 Amazon / E-Commerce Sales Analytics
 
-An interactive **Data Analytics & Business Intelligence project** built using **Power BI** to analyze e-commerce sales, profitability, customers, products, markets, geography, and shipping performance.
+**End-to-end data analytics project** covering data preparation, KPI modeling, and interactive Power BI dashboarding on a 4-year global e-commerce transaction dataset.
 
-The project transforms raw transactional data into an interactive dashboard that helps businesses identify **sales trends, profitable categories, loss-making products, high-performing markets, and opportunities for profitability improvement**.
-
----
-
-## 🚀 Project Overview
-
-This project analyzes an e-commerce dataset containing order-level information such as:
-
-* Customer details
-* Product and category information
-* Sales and profit
-* Quantity and discount
-* Shipping cost and shipping mode
-* Country, state, city, market, and region
-* Order and shipping dates
-* Customer segments
-
-The final Power BI dashboard provides an interactive view of business performance using **KPI cards, slicers, bar charts, donut charts, and geographic analysis**.
+![Tools](https://img.shields.io/badge/Tools-Excel%20%7C%20SQL%20%7C%20Power%20BI-blue)
+![Records](https://img.shields.io/badge/Records-51%2C290%20order--lines-informational)
+![Period](https://img.shields.io/badge/Period-2011--2014-lightgrey)
 
 ---
 
-## 🎯 Business Objectives
+## 📖 Overview
 
-* Analyze overall sales and profitability.
-* Identify high-performing product categories.
-* Find profitable and loss-making sub-categories.
-* Analyze sales performance across markets and countries.
-* Compare customer segments.
-* Analyze shipping-mode performance.
-* Track yearly sales and profit trends.
-* Evaluate the impact of discounts on profitability.
-* Identify business opportunities for improving profit margins.
-* Support data-driven management decisions.
+This project converts raw e-commerce order data into decision-ready business intelligence. Using **Excel, SQL, and Power BI**, it analyzes 51,290 order-line records spanning 4 years, 7 global markets, and 147 countries — covering sales performance, profitability, customer segments, shipping economics, and geographic trends — and translates the findings into concrete business recommendations.
+
+**Prepared by:** Suresh Kumar
+**Dataset:** `ECOMM_DATA.xlsx` (Orders, Returns, People)
+**Analysis Period:** Jan 1, 2011 – Dec 31, 2014
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🎯 Objectives
 
-| Tool                   | Purpose                                  |
-| ---------------------- | ---------------------------------------- |
-| **Microsoft Excel**    | Data storage and initial data inspection |
-| **Power Query**        | Data cleaning and transformation         |
-| **Power BI**           | Dashboard development and visualization  |
-| **DAX**                | KPI and analytical calculations          |
-| **Data Visualization** | Business insights and reporting          |
-
----
-
-## 📈 Key KPIs
-
-| KPI               |      Result |
-| ----------------- | ----------: |
-| 💰 Total Sales    | **$12.64M** |
-| 📊 Total Profit   |  **$1.47M** |
-| 📦 Total Quantity |   **178K+** |
-| 🧾 Orders         |    **25K+** |
-| 👥 Customers      |   **1.5K+** |
-| 🌍 Countries      |     **147** |
-| 📈 Profit Margin  |  **11.61%** |
-| 🔄 Return Rate    |   **4.69%** |
+- Measure overall sales, profit, quantity, orders, customers, and shipping performance
+- Identify high- and low-performing categories, sub-categories, markets, countries, and states
+- Analyze yearly growth and profitability trends (2011–2014)
+- Evaluate customer segments and shipping modes for business planning
+- Build an interactive Power BI dashboard with category-level drill-down
+- Translate analytical findings into practical business recommendations
 
 ---
 
-## 📊 Dashboard Features
+## 🧰 Tools & Techniques
 
-### 1. Sales Analysis
-
-* Total sales performance
-* Sales by country
-* Sales by state
-* Sales by market
-* Yearly sales trends
-
-### 2. Profitability Analysis
-
-* Total profit
-* Profit margin
-* Profit by category
-* Profit by sub-category
-* Identification of loss-making products
-
-### 3. Category Analysis
-
-The dashboard allows users to filter performance by:
-
-* Furniture
-* Office Supplies
-* Technology
-
-### 4. Geographic Analysis
-
-Analyzed performance across:
-
-* Countries
-* States
-* Cities
-* Markets
-* Regions
-
-### 5. Customer Analysis
-
-Analyzed sales and profitability across:
-
-* Consumer
-* Corporate
-* Home Office
-
-### 6. Shipping Analysis
-
-Compared:
-
-* Standard Class
-* Second Class
-* First Class
-* Same Day
+| Category | Details |
+|---|---|
+| **Data Preparation** | Data validation, feature engineering (Year extraction, profitability ratios, return rate) |
+| **Analysis** | SQL aggregation, KPI modeling, segmentation, geographic and profitability analysis |
+| **Visualization** | Power BI — KPI cards, slicers, bar charts, donut charts, drill-down views |
+| **Dataset Structure** | Orders (51,290 rows × 24 cols) · Returns (1,175 rows) · People (13 rows) |
 
 ---
 
-## 🔍 Key Business Insights
+## 📊 Key KPIs
 
-### 💻 Technology
+| KPI | Value |
+|---|---|
+| Total Sales | **$12.64M** |
+| Total Profit | **$1.47M** (11.61% margin) |
+| Total Quantity Sold | **178.3K units** |
+| Orders | **25,035** |
+| Customers | **1,590** |
+| Markets / Countries | **7 / 147** |
+| Return Rate | **4.69%** |
+| Weighted Avg. Discount | **0.11%** |
 
-Technology is the strongest category in terms of revenue and profitability, making it an important growth area.
+---
 
-### 🌎 APAC Market
+## 🔍 Key Findings
 
-APAC is one of the highest-performing markets and represents a significant revenue opportunity.
-
-### 📦 Standard Class
-
-Standard Class is the dominant shipping mode, making shipping efficiency an important operational area.
-
-### ⚠️ Tables
-
-Tables is a major profitability concern because it generates negative profit despite contributing sales.
-
-### 💸 Discount Management
-
-High discounting can reduce profit margins. A margin-based discount strategy can help protect profitability.
-
-### 🌍 Market Optimization
-
-Lower-margin markets should be analyzed for product mix, shipping costs, pricing, and discount strategies.
+- **Sales grew 90.3%** — from $2.26M (2011) to $4.30M (2014), with profit rising from $248.9K to $504.2K over the same period.
+- **Technology** is the strongest category by both revenue ($4.74M) and margin (13.99%); **Furniture** lags at just 6.94% margin despite $4.11M in sales.
+- **Tables** is the single biggest profitability concern — a loss-making sub-category at **-$64.1K**.
+- **APAC** is the top market ($3.59M sales), while **EMEA** has the weakest margin (5.45%), signaling pricing/cost issues.
+- **Standard Class** shipping dominates, generating $7.58M in sales (of $12.64M total).
+- **Consumer** is the largest customer segment, contributing $6.51M in sales and $749.2K in profit.
 
 ---
 
 ## 💡 Business Recommendations
 
-1. **Optimize Furniture pricing** by reviewing product costs, discounts, and shipping expenses.
-2. **Investigate Tables profitability** and identify the reasons behind negative margins.
-3. **Prioritize Technology products** with strong sales and profitability.
-4. **Control excessive discounting** using minimum-margin thresholds.
-5. **Improve logistics efficiency**, especially for high-volume Standard Class orders.
-6. **Analyze customer returns** to identify recurring product or fulfillment issues.
-7. **Use market-level pricing strategies** instead of a one-size-fits-all approach.
-8. Create Power BI alerts for **negative profit, declining margins, high returns, and unusual discounts**.
+1. **Optimize Furniture pricing** — review supplier costs, freight, and discounting, especially for Tables
+2. **Control discounting** — enforce margin-based discount thresholds
+3. **Prioritize high-margin growth** — scale investment in Technology and Office Supplies
+4. **Improve EMEA economics** — analyze freight, product mix, and discount behavior
+5. **Investigate returns** — break down the 4.69% return rate by category, market, and segment
+6. **Adopt regional pricing** — replace one-size-fits-all pricing with market-level strategy
+7. **Monitor shipping economics** — improve fulfillment efficiency for Standard Class
+8. **Build management alerts** — flag negative-profit products, margin decline, and unusual discounting in Power BI
 
 ---
 
-## 📂 Project Structure
+## 📈 Dashboard Preview
 
-```text
-Amazon-Ecommerce-Sales-Analytics/
-│
-├── ECOMM DATA.xlsx
-├── Amazon_Sales_Dashboard.pbix
-├── README.md
-│
-├── Dashboard/
-│   ├── dashboard_overview.png
-│   ├── furniture_analysis.png
-│   ├── office_supplies_analysis.png
-│   └── technology_analysis.png
-│
-└── Report/
-    └── Project_Report.pdf
+The Power BI dashboard supports category-level drill-down (Furniture / Office Supplies / Technology) with dynamically updating KPI cards, country/state rankings, market mix, and shipping-mode performance.
+
+> 🖼️ *Add dashboard screenshots here, e.g.:*
+> `![Dashboard - All Categories](screenshots/dashboard_all_categories.png)`
+> `![Dashboard - Technology](screenshots/dashboard_technology.png)`
+
+---
+
+## 📁 Repository Structure
+
+```
+├── data/
+│   └── ECOMM_DATA.xlsx              # Raw dataset (Orders, Returns, People)
+├── dashboard/
+│   └── Amazon_Sales_Dashboard.pbix  # Power BI dashboard file
+├── report/
+│   └── Ecommerce_Analytics_Report.pdf  # Full project report
+├── screenshots/
+│   └── *.png                        # Dashboard screenshots
+└── README.md
 ```
 
 ---
 
-## 📷 Power BI Dashboard
+## 🚀 Key Takeaways
 
-The dashboard includes:
-
-* KPI Cards
-* Category Slicer
-* Sales by Country
-* Sales by State
-* Sales by Market
-* Sales by Category
-* Sales by Ship Mode
-* Interactive filtering
-* Business performance analysis
+- Demonstrated end-to-end analytics: Excel ingestion → SQL aggregation → Power BI dashboarding
+- Analyzed 51,290 order records across 147 countries and 7 markets
+- Delivered actionable KPIs and translated them into pricing, product, and logistics recommendations
+- Identified a material profitability issue (Tables sub-category) invisible from revenue alone
 
 ---
 
-## 🧮 Analytical Process
+## 🔮 Next Steps
 
-```text
-Raw Excel Data
-      ↓
-Data Cleaning
-      ↓
-Data Transformation
-      ↓
-Data Modeling
-      ↓
-DAX Calculations
-      ↓
-KPI Creation
-      ↓
-Power BI Visualization
-      ↓
-Business Insights
-      ↓
-Recommendations
-```
+- Monthly sales trend page
+- Customer lifetime-value (CLV) analysis
+- Product-level Pareto (80/20) analysis
+- Return-reason breakdown
+- Automated profitability alert dashboard
 
 ---
 
-## 📌 Skills Demonstrated
+## 📫 Connect
 
-* Data Cleaning
-* Data Transformation
-* Exploratory Data Analysis
-* Business Analytics
-* Data Visualization
-* Power BI Dashboard Development
-* DAX
-* KPI Development
-* Sales Analysis
-* Profitability Analysis
-* Customer Segmentation
-* Geographic Analysis
-* Business Decision-Making
-
----
-
-## 👨‍💻 Author
-
-**Suresh Kumar**
-
-**Aspiring Data Analyst | Excel | SQL | Power BI | Python**
-
-* 📧 Email: [sureshkumarverma049@gmail.com](mailto:sureshkumarverma049@gmail.com)
-* 🔗 LinkedIn: [Suresh Kumar](https://www.linkedin.com/in/sureshlakhesar)
-* 💻 GitHub: [Sureshlakhesar](https://github.com/Sureshlakhesar)
-
----
-
-## ⭐ Project Purpose
-
-This project was created as a **Data Analyst / Business Analyst portfolio project** to demonstrate practical skills in transforming raw e-commerce data into meaningful business insights using **Excel, Power BI, Power Query, DAX, and data visualization**.
-
-If you find this project useful, consider giving the repository a ⭐.
+**Suresh Kumar** — Aspiring Data Analyst
+[LinkedIn](https://linkedin.com/in/sureshlakhesar) · [GitHub](https://github.com/Sureshlakhesar) · sureshkumarverma049@gmail.com
